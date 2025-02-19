@@ -1,40 +1,48 @@
-
 #include <stdio.h>
 
-int main(){
- int pontos;
- float populacao, area, pib;
- char estado[20], cidade[20], codigo[5];     
 
- printf("Digite o nome do seu estado: \n");
- scanf("%s", estado);
+        int main(){
 
- printf("Digite o código da cidade:\n");
- scanf("%s", codigo);
+            char estado[20] ;
+            char codigocarta[5];
+            char nomedacidade[15];
+            int populacao;
+            float area;
+            float pib;
+            int pontosturisticos;
 
- printf("Digite o nome da sua cidade: \n");
- scanf("%s", cidade);
+            printf("Digite o estado(use - ao invés de espaço): ");
+            scanf("%s", estado);
 
- printf("Digite a população da cidade: \n");
- scanf("%f", &populacao);
+            printf("Codigo da carta: ");
+            scanf("%s", codigocarta);
 
- printf("Digite a área em km da cidade: \n");
- scanf("%f", &area);
+            printf("Nome da cidade(use - ao invés de espaço): ");
+            scanf("%s", nomedacidade);
 
- printf("Digite o pib da cidade: \n");
- scanf("%f", &pib);
+            printf("População: ");
+            scanf("%d", &populacao);
+            
+            printf("Area em Km²: ");
+            scanf("%f", &area);
+            
+            printf("Pib: ");
+            scanf("%f", &pib);
+            
+            printf("Pontos Turisticos: ");
+            scanf("%d", &pontosturisticos);
 
- printf("Quantos pontos turísticos a cidade possui? \n");
- scanf("%d", &pontos);
- 
 
- printf("Estado: %s", estado);
- printf("Código da cidade: %s", codigo);
- printf(" - Cidade: %s\n", cidade);
- printf("População: %f", populacao);
- printf(" - Área em km: %f\n", area);
- printf("PIB: %f", pib);
- printf(" - Pontos turísticos: %d\n", pontos);
- 
-    return 0;
-}
+            printf("O nome do estado: %s\n", estado);
+            printf("O código da carta: %s\n", codigocarta);
+            printf("O nome da cidade: %s\n", nomedacidade);
+            printf("População: %d\n", populacao);
+            printf("Área em km²: %f\n", area);
+            printf("PIB: %f\n", pib);
+            printf("Pontos turísticos: %d\n", pontosturisticos);
+
+            return 0;
+            
+            
+
+        }
