@@ -12,13 +12,13 @@
             int pontosturisticos;
 
             printf("Digite o estado(use - ao invés de espaço): ");
-            scanf("%s", estado);
+            scanf("%s", &estado);
 
             printf("Codigo da carta: ");
-            scanf("%s", codigocarta);
+            scanf("%s", &codigocarta);
 
             printf("Nome da cidade(use - ao invés de espaço): ");
-            scanf("%s", nomedacidade);
+            scanf("%s", &nomedacidade);
 
             printf("População: ");
             scanf("%d", &populacao);
